@@ -3,9 +3,9 @@
 % PeerJ 8:e9414 https://doi.org/10.7717/peerj.9414
 
 % This script is designed to test the trigger-stimulus synchronization accuracy. It does that by:
-%% a) presenting a visual + auditory stimulus
-%% b) sending an event marker (trigger) immediatly after
-%% c) repeating the process n times. 
+% % a) presenting a visual + auditory stimulus
+% % b) sending an event marker (trigger) immediatly after
+% % c) repeating the process n times. 
 
 % You can run the script while saving the event marking data and then test their accuracy 
 
