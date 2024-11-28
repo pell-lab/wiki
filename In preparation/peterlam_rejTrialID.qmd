@@ -1,0 +1,206 @@
+---
+title: "Flexible solution to retain information about trial rejections: Towards trial-level modelling"
+author: "Peter Lam"
+date: today
+output: html_document
+
+execute: 
+  cache: true
+
+format:
+  html:
+    theme: cosmo
+    number-sections: true
+    df-print: kable
+      
+knitr:
+  opts_chunk: 
+    collapse: true
+    echo: true
+    fig.retina: 2
+    fig.width:  6
+    fig.asp:  2/3
+    fig.show: hold
+---
+
+```{r, message=F}
+#| code-fold: true
+
+# Load the required libraries
+library(tidyverse)
+library(dplyr)
+library(stringr)
+library(kableExtra)
+```
+
+# Motivation
+
+-   For decades, we analyzed aggregated ERP measures (e.g., mean amplitude) across multiple trials for each subject and condition
+-   This is not ideal because we lose much information about:
+    -   Trial-to-trial variability
+    -   The weight given by number of trials (artifact rejection)
+-   As often is the case, hierarchical linear modelling (like LMEM) is more robust to these issues (unbalanced data, unequal by-subject variances)
+
+## Problem
+
+-   EEGLAB, the most popular MATLAB toolbox for analyzing EEG data, is a bit of a blackbox to non-programmers (including me)
+-   It might be challenging to extract information the developers did not intend for us to have in a regular analysis pipeline
+-   The problem intensifies when pre-processing pipelines [^1] often reject segments/trials at multiple stages
+
+[^1]: E.g., our lab's pre-processing pipeline (<https://github.com/pell-lab/wiki/wiki/EEG-Preprocessing-with-EEGlab>)
+
+In our lab, we remove data at two stages: 1. Before ICA (e.g., manual rejection of gross artifacts) 2. After epoching (e.g., automatic rejection of trials with artifacts)
+
+This tutorial aims to demonstrate a general solution to retain information about trial rejections. This is quite hacky but is the most foolproof solution I could come up with.
+
+# Intended outcome
+
+The intended outcome is to have a table like this:
+```{r, echo = F, message = F, warning = F}
+
+ERP_df_clean <- read_csv("assets/dataframes/Output/ERP_df_clean.csv") %>%
+  mutate_if(is.character, as.factor)
+
+ERP_df_clean %>%
+  head(10) %>%
+  kable()
+
+```
+
+The clean data frame contains the usual columns with subject, condition, and response information here. However, note the `trial_num` and `epochID` columns. Traditionally, each row would correspond to data aggregated across multiple trials for each condition, subject, and electrode. Here, we have the same information but *only of a specific trial*. As a result, if there were *n* rows in a traditional ERP dataframe, there are now `n * number of trial` rows in this dataframe. An additional benefit is that we can include item ID (different semantic content in this context) as a grouping factor in our LMEM.
+
+# Solution (single-subject demo)
+
+## Prerequisites
+
+1.  Pre-processed EEG data for each subject (.set files) in EEGLAB
+
+-   Assuming you have saved a copy of the data after each processing step, we need the .set files at two stages:
+    1.  After manual rejection of gross artifacts (but before binning)
+    2.  After automatic rejection of trials with artifacts
+
+2.  Behavioral data (e.g., response accuracy) for each subject
+
+-   This dataframe serves as the complete "mould" (all trials are recorded) for the ERP data that potentially misses trials
+
+## Logic
+
+This solution leverages the fact that EEGLAB assigns a unique ID to each event (an event is created whenever you send a trigger). This ID is stored in the `EEG.event.urevent` field[^2] and does not change even if some trials are being rejected. Importantly, for brainvision files, values in the urevent column is the same as the `bvmknum` column. This will come in handy when urevent is inexplicably missing after assigning bins.
+
+[^2]: <https://eeglab.org/tutorials/ConceptsGuide/Data_Structures.html>
+
+![An illustration of the relationship between event and urevent in EEGLAB. Note that event if an event is removed, its identifier, urevent, is not affect. Illustration taken from <https://eeglab.org/tutorials/ConceptsGuide/Data_Structures.html>](assets/images/ureventTimeline_illustration.gif)
+
+## Rejection information source 1: Manual rejection
+
+This matlab script extracts, for each subject, two dataframes: 
+  1. The complete "identifier" information of all events (urevents)
+  2. The same information but after some trials have been rejected
+
+Respective data frames for sub01 are shown below:
+```{r, echo = F, warning = F, message = F}
+urevent_list = read_csv("assets/dataframes/Input/eventList_original/sub01_EEG_urevent_data.csv") %>%
+  # do the same as above in filtering for relevant rows
+  filter(str_sub(type, -1) %in% c("1", "2"))
+
+urevent_list %>%
+  kable() %>%
+  kable_styling(full_width = F) %>%
+  scroll_box(width = "100%", height = "300px")
+```
+"Identifier" list. Number of rows = number of total trials = `r nrow(urevent_list)`
+
+```{r, echo = F, warning = F, message = F}
+event_list = read_csv("assets/dataframes/Input/eventList_postMR/sub01_EEG_event_data.csv") %>%
+  # keep only relevant triggers (my markers end in either 1 or 2)
+  filter(str_sub(type, -1) %in% c("1", "2"))
+
+event_list %>%
+  kable() %>%
+  kable_styling(full_width = F) %>%
+  scroll_box(width = "100%", height = "300px")
+```
+List of remaining events. Number of rows = number of remaining trials = `r nrow(event_list)`
+
+Compare the two dataframes above. The `type` column contains the trigger code. Take S 21 for example, S stands for stimulus, the '2' stands for the accented-female-highImposition-rude condition and the '1' means that it is the sentence onset of a friendliness task ^[this is not relevant for the current discussion, but you will have your own set of trigger codes standing for different things, and principally do the same thing here].
+Note how the "identifier" list contains all experimental trials, while the "remaining events" list contains only the trials that were not rejected (e.g., the first trial in `condition S131`, `bvmknum/urevent 17` was rejected). `urevent` and `bvmknum`, as said above, are used interchangeably in the EEGLAB data structure that serve the same purpose of uniquely identifying an event. Try to verify that by comparing the two data frames.
+
+We are now ready to merge the two data frames by the unique identifier (`bvmknum`/`urevent`):
+```{r}
+joined_df <- urevent_list %>% 
+    left_join(event_list, by = c("bvmknum" = "urevent")) %>%
+    rename(events_OG = "type.x",
+           events_kept = "type.y",
+           eventID  = "bvmknum") %>%
+    # keep only second to fourth characters
+    mutate(events_OG = str_sub(events_OG, 2, 4),
+           events_kept = str_sub(events_kept, 2, 4)) %>%
+    # filter for events_OF ending in '1' or '2'
+    filter(str_detect(events_OG, "1$|2$")) %>%
+    mutate(stimCondERP_code = str_replace(events_OG, "1$|2$", "0"))
+
+joined_df %>%
+  kable() %>%
+  kable_styling(full_width = F) %>%
+  scroll_box(width = "100%", height = "300px")
+```
+NAs in `events_kept` indicate that the trial was rejected. The `stimCondERP_code` column is a cleaned-up version of the trigger code that will be used to merge with the behavioral data.
+
+```{r, warning = F, message = F}
+behavioral_df <- read_csv("assets/dataframes/Input/behavioral/behavioral_sub01_con1.csv") %>%
+  filter(!str_detect(task, "practice")) %>%
+    rename(subID_behavDF = "subID")
+
+joined_df_2 <- cbind(joined_df, behavioral_df) %>%
+  dplyr::select(-c("order", "subID_behavDF", "sex", "block_num", "rts", "preStem", "stem", "final"))
+
+joined_df_2 %>%
+  kable() %>%
+  kable_styling(full_width = F) %>%
+  scroll_box(width = "100%", height = "300px")
+```
+
+## Rejection information source 2: Automatic rejection
+
+This MATLAB script extracts the event information after automatic rejection of trials.
+
+::: {.callout-note}
+IMPORTANT: by "rejection", EEG/ERPLAB actually flags the trials and does not remove them from the dataset. So in this step, the goal is to obtain which of the remaining trials were flagged as "bad" for rejection. 
+:::
+
+The data frame for sub01 is here:
+```{r, echo = F, warning = F, message = F}
+event_list_postMR <- read_csv("assets/dataframes/Input/eventList_flaggedByAutoRej/ARflagList_sub01.txt") %>%
+  dplyr::select(bvmknum, code, codelabel, flag)
+
+event_list_postMR %>%
+  kable() %>%
+  kable_styling(full_width = F) %>%
+  scroll_box(width = "100%", height = "300px")
+```
+The `flag` column indicates whether the trial was flagged as "bad" (= 1) or not. In this data set, there are `r sum(event_list_postMR$flag)` bad trials out of `r nrow(event_list_postMR)` remaining trials. ^[as a sanity check, you can compare the `bvmknum` column with the `eventID` column in the few preceding dataframes. Also the number of rows (nrow = `r nrow(event_list_postMR)`should match the above-list containing remaining events after manual rejection (nrow = `r nrow(event_list)`]. 
+
+We can now merge this data frame with the one from the previous step:
+```{r}
+joined_df_final <- joined_df_2 %>%
+  left_join(event_list_postMR, by = c("eventID" = "bvmknum")) %>%
+  # combined_flag = 1 if events_kept is NA or if flag is 1
+  mutate(combined_flag = ifelse(is.na(events_kept) | flag == 1, 1, 0)) %>%
+  dplyr::select(trial_num, fileName, trial_code, codelabel, task, response, combined_flag) %>%
+  rename(condition = "trial_code")
+
+```
+There are a total of `r sum(joined_df_final$combined_flag)` trials that were rejected at either stage.
+
+## End result
+```{r}
+joined_df_final %>%
+  kable() %>%
+  kable_styling(full_width = F) %>%
+  scroll_box(width = "100%", height = "300px")
+```
+This is the final data frame that contains all `r nrow(joined_df_final)` trials (and which ones are flagged for rejection). The `combined_flag` column indicates whether the trial was rejected at either stage. This information can be used to filter out trials in the ERP data frame.
+
+# Next steps
+- Scale up with a loop over all subjects
+- Include ERP measures (like mean amplitudes) per subject per condition per trial (beyond the scope of this tutorial)

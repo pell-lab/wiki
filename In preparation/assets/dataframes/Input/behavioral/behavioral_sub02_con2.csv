@@ -1,0 +1,289 @@
+order,subID,sex,block_num,trial_num,fileName,trial_code,task,response,rts,preStem,stem,final
+2,02,f,block1,1,SMLP_07.wav,200,practiceRateFriendliness,3,1.63428040011786,Please,hang up the,picture
+2,02,f,block1,2,AMLP_10.wav,200,practiceRateFriendliness,3,0.732357400003821,Please,pay me my,sandwich
+2,02,f,block1,3,SFHR_12.wav,200,practiceRateFriendliness,2,0.820686500053853,Please,buy me a,smartphone
+2,02,f,block1,4,SMLR_07.wav,200,practiceRateFriendliness,2,1.06769969989546,Please,hang up the,picture
+2,02,f,block1,5,AFHP_09.wav,200,practiceRateFriendliness,4,0.919095000019297,Please,get me the,ladder
+2,02,f,block1,6,AMLR_10.wav,200,practiceRateFriendliness,2,0.870816000038758,Please,pay me my,sandwich
+2,02,f,block1,7,SFHP_12.wav,200,practiceRateFriendliness,4,0.779189199907705,Please,buy me a,smartphone
+2,02,f,block1,8,AFHR_09.wav,200,practiceRateFriendliness,3,0.834493799833581,Please,get me the,ladder
+2,02,f,block1,1,AMLP_12.wav,70,rateFriendliness,3,2.30262409988791,Please,buy me a,muffin
+2,02,f,block1,2,SMHR_38.wav,140,rateFriendliness,3,0.330142799997702,Please,find me the,answer
+2,02,f,block1,3,AFLP_33.wav,30,rateFriendliness,4,1.16664319997653,Please,remove the,cover
+2,02,f,block1,4,AFLP_20.wav,30,rateFriendliness,4,0.321634599938989,Please,bring me the,hammer
+2,02,f,block1,5,AFHR_10.wav,20,rateFriendliness,2,1.42834510002285,Please,pay for my,dinner
+2,02,f,block1,6,SFHP_07.wav,90,rateFriendliness,3,0.875731999985874,Please,hang up the,curtains
+2,02,f,block1,7,AMHP_17.wav,50,rateFriendliness,3,0.399876700015739,Please,send me your,homework
+2,02,f,block1,8,SMHP_32.wav,130,rateFriendliness,4,1.68041979987174,Please,check on the,baby
+2,02,f,block1,9,SMHR_17.wav,140,rateFriendliness,2,0.987488999962807,Please,send me your,homework
+2,02,f,block1,10,AFLR_31.wav,40,rateFriendliness,3,0.635439999867231,Please,take off your,glasses
+2,02,f,block1,11,SFHP_31.wav,90,rateFriendliness,3,1.80257680010982,Please,take off your,t-shirt
+2,02,f,block1,12,SFLP_34.wav,110,rateFriendliness,4,1.28147609997541,Please,describe your,uncle
+2,02,f,block1,13,AMLR_30.wav,80,rateFriendliness,4,0.593596799997613,Please,tidy the,hallway
+2,02,f,block1,14,SMLR_17.wav,160,rateFriendliness,3,1.95153729990125,Please,send me your,email
+2,02,f,block1,15,SFHP_20.wav,90,rateFriendliness,3,1.05174509994686,Please,bring me the,rent cheque
+2,02,f,block1,16,AMHP_32.wav,50,rateFriendliness,3,0.229573300108314,Please,check on the,baby
+2,02,f,block1,17,AMHP_28.wav,50,rateFriendliness,3,0.385916800005361,Please,take out the,garbage
+2,02,f,block1,18,SMHR_32.wav,140,rateFriendliness,3,0.310124399838969,Please,check on the,baby
+2,02,f,block1,19,SFLR_34.wav,120,rateFriendliness,3,0.990236099809408,Please,describe your,uncle
+2,02,f,block1,20,AFHP_01.wav,10,rateFriendliness,4,0.973419999936596,Please,lend me a,hundred
+2,02,f,block1,21,AMLR_18.wav,80,rateFriendliness,4,0.755628600018099,Please,pass himyour,message
+2,02,f,block1,22,SMHR_30.wav,140,rateFriendliness,2,0.803941299906,Please,tidy the,cabin
+2,02,f,block1,23,SMHP_28.wav,130,rateFriendliness,4,0.915228500030935,Please,take out the,garbage
+2,02,f,block1,24,AFHR_37.wav,20,rateFriendliness,3,0.789310399908572,Please,drive us to,Boston
+2,02,f,block1,25,AFHP_34.wav,10,rateFriendliness,4,0.705651999916881,Please,describe your,feelings
+2,02,f,block1,26,SMLP_32.wav,150,rateFriendliness,3,0.685138799948618,Please,check on the,oven
+2,02,f,block1,27,SFHP_34.wav,90,rateFriendliness,3,0.537377499975264,Please,describe your,feelings
+2,02,f,block1,28,SMLR_09.wav,160,rateFriendliness,2,1.0933755999431,Please,get me the,pencil
+2,02,f,block1,29,SMLP_30.wav,150,rateFriendliness,3,1.27898969990201,Please,tidy the,hallway
+2,02,f,block1,30,AFHP_37.wav,10,rateFriendliness,3,0.683016900205985,Please,drive us to,Boston
+2,02,f,block1,31,SMHP_18.wav,130,rateFriendliness,3,0.471224299864843,Please,pass him your,bankcard
+2,02,f,block1,32,AFHP_31.wav,10,rateFriendliness,3,0.910204800078645,Please,take off your,t-shirt
+2,02,f,block1,33,AMLP_17.wav,70,rateFriendliness,4,0.678292399970815,Please,send me your,email
+2,02,f,block1,34,SFLR_10.wav,120,rateFriendliness,2,0.731488599907607,Please,pay for my,sandwich
+2,02,f,block1,35,AMHP_38.wav,50,rateFriendliness,3,1.39353349991143,Please,find me the,answer
+2,02,f,block1,36,AMLR_38.wav,80,rateFriendliness,2,0.749548400053754,Please,find me the,scissors
+2,02,f,block1,37,SFHR_37.wav,100,rateFriendliness,3,0.794105099979788,Please,drive us to,Boston
+2,02,f,block1,38,SMHP_09.wav,130,rateFriendliness,3,0.41313729993999,Please,get me the,ladder
+2,02,f,block1,39,SFHR_01.wav,100,rateFriendliness,1,1.27164750010706,Please,lend me a,hundred
+2,02,f,block1,40,AMLP_32.wav,70,rateFriendliness,3,0.718788499943912,Please,check on the,oven
+2,02,f,block1,41,SFLP_10.wav,110,rateFriendliness,4,1.27588249999098,Please,pay for my,sandwich
+2,02,f,block1,42,AMHP_12.wav,50,rateFriendliness,3,0.722972700139508,Please,buy me a,smartphone
+2,02,f,block1,43,SMHR_18.wav,140,rateFriendliness,2,1.13154860003851,Please,pass him your,bankcard
+2,02,f,block1,44,SMLR_28.wav,160,rateFriendliness,1,1.05163709982298,Please,take out the,butter
+2,02,f,block1,45,SFLP_07.wav,110,rateFriendliness,4,1.43010520003736,Please,hang up the,picture
+2,02,f,block1,46,SFHR_34.wav,100,rateFriendliness,4,0.392376799834892,Please,describe your,feelings
+2,02,f,block1,47,AMLR_12.wav,80,rateFriendliness,2,1.04656259994954,Please,buy me a,muffin
+2,02,f,block1,48,AFLP_10.wav,30,rateFriendliness,4,1.15979809989221,Please,pay for my,sandwich
+2,02,f,block1,49,AMHP_14.wav,50,rateFriendliness,3,1.14284959994256,Please,install the,washer
+2,02,f,block1,50,AFLR_37.wav,40,rateFriendliness,3,0.262319699861109,Please,drive us to,campus
+2,02,f,block1,51,AFLR_20.wav,40,rateFriendliness,3,1.65191589994356,Please,bring me the,hammer
+2,02,f,block1,52,SMLP_28.wav,150,rateFriendliness,4,1.68678699992597,Please,take out the,butter
+2,02,f,block1,53,SFHP_01.wav,90,rateFriendliness,4,1.60600990010425,Please,lend me a,hundred
+2,02,f,block1,54,AFHP_33.wav,10,rateFriendliness,4,0.280534300021827,Please,remove the,diaper
+2,02,f,block1,55,AFLR_10.wav,40,rateFriendliness,2,0.895606299862266,Please,pay for my,sandwich
+2,02,f,block1,56,SMHP_30.wav,130,rateFriendliness,4,0.889478100230917,Please,tidy the,cabin
+2,02,f,block1,57,SFLR_37.wav,120,rateFriendliness,1,0.909639099845663,Please,drive us to,campus
+2,02,f,block1,58,SMLP_18.wav,150,rateFriendliness,3,1.6145661000628,Please,pass him your,message
+2,02,f,block1,59,AMLR_17.wav,80,rateFriendliness,3,1.35225890018046,Please,send me your,email
+2,02,f,block1,60,AMHR_14.wav,60,rateFriendliness,2,0.559994699899107,Please,install the,washer
+2,02,f,block1,61,SMHP_17.wav,130,rateFriendliness,4,1.39204620011151,Please,send me your,homework
+2,02,f,block1,62,SFHP_33.wav,90,rateFriendliness,3,0.671063899993896,Please,remove the,diaper
+2,02,f,block1,63,SMLR_12.wav,160,rateFriendliness,3,0.234954099869356,Please,buy me a,muffin
+2,02,f,block1,64,AFLR_34.wav,40,rateFriendliness,3,0.223829899914563,Please,describe your,uncle
+2,02,f,block1,65,AMHP_30.wav,50,rateFriendliness,2,1.03301239991561,Please,tidy the,cabin
+2,02,f,block1,66,SFHP_37.wav,90,rateFriendliness,4,0.844959900015965,Please,drive us to,Boston
+2,02,f,block1,67,AMLR_32.wav,80,rateFriendliness,2,1.15911850007251,Please,check on the,oven
+2,02,f,block1,68,AFHP_20.wav,10,rateFriendliness,4,0.66617100010626,Please,bring me the,rent cheque
+2,02,f,block1,69,SMLP_38.wav,150,rateFriendliness,4,1.02090330002829,Please,find me the,scissors
+2,02,f,block1,70,AMHR_30.wav,60,rateFriendliness,3,0.707770999986678,Please,tidy the,cabin
+2,02,f,block1,71,AMLR_28.wav,80,rateFriendliness,3,0.29565649991855,Please,take out the,butter
+2,02,f,block1,72,SMLR_14.wav,160,rateFriendliness,2,0.784632600145414,Please,install the,update
+2,02,f,block1,73,AFHP_10.wav,10,rateFriendliness,4,0.823058600071818,Please,pay for my,dinner
+2,02,f,block1,74,AFHR_34.wav,20,rateFriendliness,3,1.33651109994389,Please,describe your,feelings
+2,02,f,block1,75,SMLP_12.wav,150,rateFriendliness,4,0.796008900040761,Please,buy me a,muffin
+2,02,f,block1,76,AMLP_28.wav,70,rateFriendliness,3,0.817986499983817,Please,take out the,butter
+2,02,f,block1,77,AFLP_01.wav,30,rateFriendliness,4,0.782449100166559,Please,lend me a,nickel
+2,02,f,block1,78,SFLP_37.wav,110,rateFriendliness,4,0.340923600131646,Please,drive us to,campus
+2,02,f,block1,79,AFLR_01.wav,40,rateFriendliness,2,1.17064359993674,Please,lend me a,nickel
+2,02,f,block1,80,AFHP_07.wav,10,rateFriendliness,3,1.27043529995717,Please,hang up the,curtains
+2,02,f,block1,81,AFHR_31.wav,20,rateFriendliness,3,1.26654159999453,Please,take off your,t-shirt
+2,02,f,block1,82,SMLR_32.wav,160,rateFriendliness,2,0.687564099906012,Please,check on the,oven
+2,02,f,block1,83,SMLP_09.wav,150,rateFriendliness,3,1.53947430010885,Please,get me the,pencil
+2,02,f,block1,84,SFHR_20.wav,100,rateFriendliness,1,0.576204100158066,Please,bring me the,rent cheque
+2,02,f,block1,85,SFHR_10.wav,100,rateFriendliness,2,1.2326871000696,Please,pay for my,dinner
+2,02,f,block1,86,SMHP_14.wav,130,rateFriendliness,3,0.875305599998683,Please,install the,washer
+2,02,f,block1,87,AFLP_31.wav,30,rateFriendliness,4,0.723489199997857,Please,take off your,glasses
+2,02,f,block1,88,AMHR_17.wav,60,rateFriendliness,3,0.870583399897441,Please,send me your,homework
+2,02,f,block1,89,SFLR_07.wav,120,rateFriendliness,1,0.997551800217479,Please,hang up the,picture
+2,02,f,block1,90,AFLP_34.wav,30,rateFriendliness,3,0.625371400034055,Please,describe your,uncle
+2,02,f,block1,91,SFLR_33.wav,120,rateFriendliness,1,0.791136199841276,Please,remove the,cover
+2,02,f,block1,92,AMHR_12.wav,60,rateFriendliness,2,0.683554199989885,Please,buy me a,smartphone
+2,02,f,block1,93,AMHR_32.wav,60,rateFriendliness,2,0.328265899792314,Please,check on the,baby
+2,02,f,block1,94,AFHR_07.wav,20,rateFriendliness,2,0.777909999946132,Please,hang up the,curtains
+2,02,f,block1,95,SMHP_38.wav,130,rateFriendliness,4,1.72484279982746,Please,find me the,answer
+2,02,f,block1,96,AFLR_33.wav,40,rateFriendliness,2,0.951379399979487,Please,remove the,cover
+2,02,f,block1,97,AFLP_07.wav,30,rateFriendliness,4,0.583715799963102,Please,hang up the,picture
+2,02,f,block1,98,SFHR_31.wav,100,rateFriendliness,3,0.894546399824321,Please,take off your,t-shirt
+2,02,f,block1,99,AMLP_09.wav,70,rateFriendliness,3,0.310801499988884,Please,get me the,pencil
+2,02,f,block1,100,AMHP_09.wav,50,rateFriendliness,3,0.276125099975616,Please,get me the,ladder
+2,02,f,block1,101,SFLR_20.wav,120,rateFriendliness,1,1.05561190005392,Please,bring me the,hammer
+2,02,f,block1,102,SFHR_33.wav,100,rateFriendliness,1,0.275291299913079,Please,remove the,diaper
+2,02,f,block1,103,SFLP_01.wav,110,rateFriendliness,4,1.76668119989336,Please,lend me a,nickel
+2,02,f,block1,104,AMHR_09.wav,60,rateFriendliness,3,0.767278000013903,Please,get me the,ladder
+2,02,f,block1,105,AFHR_20.wav,20,rateFriendliness,3,0.872689299983904,Please,bring me the,rent cheque
+2,02,f,block1,106,SFLP_31.wav,110,rateFriendliness,4,1.23024019994773,Please,take off your,glasses
+2,02,f,block1,107,SMLR_18.wav,160,rateFriendliness,2,0.881518800044432,Please,pass himyour,message
+2,02,f,block1,108,AMHR_18.wav,60,rateFriendliness,2,0.452895700000226,Please,pass him your,bankcard
+2,02,f,block1,109,AMLP_14.wav,70,rateFriendliness,2,0.289998699910939,Please,install the,update
+2,02,f,block1,110,SFLR_31.wav,120,rateFriendliness,1,0.715384099865332,Please,take off your,glasses
+2,02,f,block1,111,SMHR_14.wav,140,rateFriendliness,2,0.968497500056401,Please,install the,washer
+2,02,f,block1,112,SMHR_28.wav,140,rateFriendliness,2,0.806426000082865,Please,take out the,garbage
+2,02,f,block1,113,SMHR_12.wav,140,rateFriendliness,2,0.797834600089118,Please,buy me a,smartphone
+2,02,f,block1,114,AFHR_01.wav,20,rateFriendliness,2,0.418145000003278,Please,lend me a,hundred
+2,02,f,block1,115,SFLP_20.wav,110,rateFriendliness,4,1.4627473000437,Please,bring me the,hammer
+2,02,f,block1,116,SFLP_33.wav,110,rateFriendliness,4,0.280336499912664,Please,remove the,cover
+2,02,f,block1,117,SFHP_10.wav,90,rateFriendliness,4,0.382263900013641,Please,pay for my,dinner
+2,02,f,block1,118,AMLP_38.wav,70,rateFriendliness,3,0.820610400056466,Please,find me the,scissors
+2,02,f,block1,119,AMHR_28.wav,60,rateFriendliness,2,0.72682820004411,Please,take out the,garbage
+2,02,f,block1,120,AMLP_18.wav,70,rateFriendliness,3,0.579751200042665,Please,pass him your,message
+2,02,f,block1,121,SMLP_17.wav,150,rateFriendliness,4,0.672636299859732,Please,send me your,email
+2,02,f,block1,122,AFLR_07.wav,40,rateFriendliness,3,0.342360599897802,Please,hang up the,picture
+2,02,f,block1,123,AMHP_18.wav,50,rateFriendliness,3,0.242563799954951,Please,pass him your,bankcard
+2,02,f,block1,124,AMLR_09.wav,80,rateFriendliness,3,0.00833970005623996,Please,get me the,pencil
+2,02,f,block1,125,SMLR_38.wav,160,rateFriendliness,3,1.00753549998626,Please,find me the,scissors
+2,02,f,block1,126,SMHP_12.wav,130,rateFriendliness,4,0.906308900099248,Please,buy me a,smartphone
+2,02,f,block1,127,AMHR_38.wav,60,rateFriendliness,4,0.00854910002090037,Please,find me the,answer
+2,02,f,block1,128,AFLP_37.wav,30,rateFriendliness,4,1.0699785000179,Please,drive us to,campus
+2,02,f,block1,129,AMLR_14.wav,80,rateFriendliness,3,0.662993399892002,Please,install the,update
+2,02,f,block1,130,SMHR_09.wav,140,rateFriendliness,2,0.770278400043026,Please,get me the,ladder
+2,02,f,block1,131,SMLP_14.wav,150,rateFriendliness,3,0.559146800078452,Please,install the,update
+2,02,f,block1,132,SMLR_30.wav,160,rateFriendliness,3,0.462270200019702,Please,tidy the,hallway
+2,02,f,block1,133,SFHR_07.wav,100,rateFriendliness,2,1.03614249988459,Please,hang up the,curtains
+2,02,f,block1,134,SFLR_01.wav,120,rateFriendliness,2,1.23269129986875,Please,lend me a,nickel
+2,02,f,block1,135,AMLP_30.wav,70,rateFriendliness,3,0.872274800203741,Please,tidy the,hallway
+2,02,f,block1,136,AFHR_33.wav,20,rateFriendliness,4,0.464034100063145,Please,remove the,diaper
+2,02,f,block2,1,SFHR_30.wav,200,practiceRateCompliance,2,2.70475720008835,Please,tidy the,cabin
+2,02,f,block2,2,AMHR_34.wav,200,practiceRateCompliance,3,0.899277400225401,Please,describe your,feelings
+2,02,f,block2,3,SMLP_31.wav,200,practiceRateCompliance,4,1.16505279997364,Please,take off your,glasses
+2,02,f,block2,4,AFLP_32.wav,200,practiceRateCompliance,5,0.417859500041232,Please,check on the,oven
+2,02,f,block2,5,SMLR_31.wav,200,practiceRateCompliance,4,0.573478400008753,Please,take off your,glasses
+2,02,f,block2,6,AMHP_34.wav,200,practiceRateCompliance,4,0.312312300084159,Please,describe your,feelings
+2,02,f,block2,7,AFLR_32.wav,200,practiceRateCompliance,3,0.99501119996421,Please,check on the,oven
+2,02,f,block2,8,SFHP_30.wav,200,practiceRateCompliance,4,1.95385599997826,Please,tidy the,cabin
+2,02,f,block2,1,SFHR_33.wav,100,rateCompliance,2,1.15676680020988,Please,remove the,diaper
+2,02,f,block2,2,AMHP_14.wav,50,rateCompliance,4,0.97025049990043,Please,install the,washer
+2,02,f,block2,3,SMLR_38.wav,160,rateCompliance,3,1.40001540002413,Please,find me the,scissors
+2,02,f,block2,4,SMLR_09.wav,160,rateCompliance,3,0.327539300080389,Please,get me the,pencil
+2,02,f,block2,5,SMHP_28.wav,130,rateCompliance,4,1.0796264000237,Please,take out the,garbage
+2,02,f,block2,6,AMLP_28.wav,70,rateCompliance,4,0.277763399994001,Please,take out the,butter
+2,02,f,block2,7,SFHR_31.wav,100,rateCompliance,2,1.9694450001698,Please,take off your,t-shirt
+2,02,f,block2,8,AMLP_17.wav,70,rateCompliance,4,0.842444099951535,Please,send me your,email
+2,02,f,block2,9,AFHP_07.wav,10,rateCompliance,4,0.50906699988991,Please,hang up the,curtains
+2,02,f,block2,10,AMLP_38.wav,70,rateCompliance,4,0.628264300059527,Please,find me the,scissors
+2,02,f,block2,11,AFHR_33.wav,20,rateCompliance,3,1.40342839993536,Please,remove the,diaper
+2,02,f,block2,12,SFHR_34.wav,100,rateCompliance,2,1.41419190005399,Please,describe your,feelings
+2,02,f,block2,13,SMLP_14.wav,150,rateCompliance,4,1.06119150016457,Please,install the,update
+2,02,f,block2,14,AFHR_34.wav,20,rateCompliance,3,0.644128799904138,Please,describe your,feelings
+2,02,f,block2,15,SFLR_07.wav,120,rateCompliance,2,0.390193999977782,Please,hang up the,picture
+2,02,f,block2,16,SMLR_28.wav,160,rateCompliance,2,0.102880700025707,Please,take out the,butter
+2,02,f,block2,17,SMLR_14.wav,160,rateCompliance,2,0.244931699940935,Please,install the,update
+2,02,f,block2,18,SMLR_12.wav,160,rateCompliance,3,1.04582910006866,Please,buy me a,muffin
+2,02,f,block2,19,AFHP_10.wav,10,rateCompliance,4,0.624345200136304,Please,pay for my,dinner
+2,02,f,block2,20,AMHR_38.wav,60,rateCompliance,3,0.74621170014143,Please,find me the,answer
+2,02,f,block2,21,SFLR_37.wav,120,rateCompliance,2,1.60588119993918,Please,drive us to,campus
+2,02,f,block2,22,AMLP_32.wav,70,rateCompliance,4,0.726169100031257,Please,check on the,oven
+2,02,f,block2,23,AFHP_01.wav,10,rateCompliance,2,1.46074599982239,Please,lend me a,hundred
+2,02,f,block2,24,AMLR_28.wav,80,rateCompliance,4,0.691723299911246,Please,take out the,butter
+2,02,f,block2,25,SFLR_33.wav,120,rateCompliance,1,1.02298430004157,Please,remove the,cover
+2,02,f,block2,26,SMHP_12.wav,130,rateCompliance,2,0.725560399936512,Please,buy me a,smartphone
+2,02,f,block2,27,AMHP_32.wav,50,rateCompliance,4,0.958864300046116,Please,check on the,baby
+2,02,f,block2,28,SFHP_31.wav,90,rateCompliance,2,2.24229780002497,Please,take off your,t-shirt
+2,02,f,block2,29,SFLR_10.wav,120,rateCompliance,2,0.307169999927282,Please,pay for my,sandwich
+2,02,f,block2,30,SMHR_09.wav,140,rateCompliance,2,0.0957039000932127,Please,get me the,ladder
+2,02,f,block2,31,SFLP_07.wav,110,rateCompliance,3,0.80162339983508,Please,hang up the,picture
+2,02,f,block2,32,AFHR_37.wav,20,rateCompliance,3,0.77056510001421,Please,drive us to,Boston
+2,02,f,block2,33,AMLR_30.wav,80,rateCompliance,3,0.242394000058994,Please,tidy the,hallway
+2,02,f,block2,34,SMHP_38.wav,130,rateCompliance,4,0.796397200087085,Please,find me the,answer
+2,02,f,block2,35,AFLR_34.wav,40,rateCompliance,4,1.2796481999103,Please,describe your,uncle
+2,02,f,block2,36,AMHR_28.wav,60,rateCompliance,3,0.866454199887812,Please,take out the,garbage
+2,02,f,block2,37,SMLR_18.wav,160,rateCompliance,3,0.311477200128138,Please,pass himyour,message
+2,02,f,block2,38,SMHP_14.wav,130,rateCompliance,4,0.984100100118667,Please,install the,washer
+2,02,f,block2,39,SMLR_30.wav,160,rateCompliance,4,0.0438365000300109,Please,tidy the,hallway
+2,02,f,block2,40,AMLP_12.wav,70,rateCompliance,4,0.320254500024021,Please,buy me a,muffin
+2,02,f,block2,41,SFLP_10.wav,110,rateCompliance,4,0.3781307998579,Please,pay for my,sandwich
+2,02,f,block2,42,SFLP_01.wav,110,rateCompliance,5,0.860638600075617,Please,lend me a,nickel
+2,02,f,block2,43,AMLR_17.wav,80,rateCompliance,4,1.33332490012981,Please,send me your,email
+2,02,f,block2,44,AFHP_34.wav,10,rateCompliance,4,0.409123700112104,Please,describe your,feelings
+2,02,f,block2,45,AMLR_38.wav,80,rateCompliance,3,0.742577200056985,Please,find me the,scissors
+2,02,f,block2,46,AMHP_38.wav,50,rateCompliance,3,1.96040199999698,Please,find me the,answer
+2,02,f,block2,47,SMHR_17.wav,140,rateCompliance,2,0.735102399950847,Please,send me your,homework
+2,02,f,block2,48,SFLR_34.wav,120,rateCompliance,2,0.906322799855843,Please,describe your,uncle
+2,02,f,block2,49,AMHP_30.wav,50,rateCompliance,3,1.47669539996423,Please,tidy the,cabin
+2,02,f,block2,50,SMLP_12.wav,150,rateCompliance,4,1.24767499999143,Please,buy me a,muffin
+2,02,f,block2,51,AMLR_32.wav,80,rateCompliance,3,1.43671459984034,Please,check on the,oven
+2,02,f,block2,52,AMLR_18.wav,80,rateCompliance,3,0.253813999937847,Please,pass himyour,message
+2,02,f,block2,53,SMHR_32.wav,140,rateCompliance,4,1.1851081000641,Please,check on the,baby
+2,02,f,block2,54,AFLP_20.wav,30,rateCompliance,5,0.672065800055861,Please,bring me the,hammer
+2,02,f,block2,55,SMHP_30.wav,130,rateCompliance,4,0.991211500018835,Please,tidy the,cabin
+2,02,f,block2,56,SFHP_33.wav,90,rateCompliance,4,0.23682969994843,Please,remove the,diaper
+2,02,f,block2,57,AMLP_18.wav,70,rateCompliance,4,0.913616599980742,Please,pass him your,message
+2,02,f,block2,58,AFLP_37.wav,30,rateCompliance,4,0.299754400039092,Please,drive us to,campus
+2,02,f,block2,59,AMHR_09.wav,60,rateCompliance,3,0.7946721999906,Please,get me the,ladder
+2,02,f,block2,60,AMHP_12.wav,50,rateCompliance,2,1.26631559990346,Please,buy me a,smartphone
+2,02,f,block2,61,SFHP_01.wav,90,rateCompliance,2,0.571030599996448,Please,lend me a,hundred
+2,02,f,block2,62,SFHP_20.wav,90,rateCompliance,4,0.865371200023219,Please,bring me the,rent cheque
+2,02,f,block2,63,AMLR_14.wav,80,rateCompliance,3,1.13371849991381,Please,install the,update
+2,02,f,block2,64,AFLP_01.wav,30,rateCompliance,5,0.862669300055131,Please,lend me a,nickel
+2,02,f,block2,65,SFHP_10.wav,90,rateCompliance,4,1.37859310000204,Please,pay for my,dinner
+2,02,f,block2,66,AFHP_37.wav,10,rateCompliance,3,1.45356289995834,Please,drive us to,Boston
+2,02,f,block2,67,AFLR_20.wav,40,rateCompliance,4,1.32847129995935,Please,bring me the,hammer
+2,02,f,block2,68,SFLR_01.wav,120,rateCompliance,3,1.10199559992179,Please,lend me a,nickel
+2,02,f,block2,69,SMHP_09.wav,130,rateCompliance,5,1.71879000007175,Please,get me the,ladder
+2,02,f,block2,70,SMLP_28.wav,150,rateCompliance,5,0.239074100041762,Please,take out the,butter
+2,02,f,block2,71,SMHP_32.wav,130,rateCompliance,5,0.287135699996725,Please,check on the,baby
+2,02,f,block2,72,AMLR_12.wav,80,rateCompliance,3,1.14754570019431,Please,buy me a,muffin
+2,02,f,block2,73,SFLP_33.wav,110,rateCompliance,4,0.366531500127167,Please,remove the,cover
+2,02,f,block2,74,AMLR_09.wav,80,rateCompliance,4,0.338112199911848,Please,get me the,pencil
+2,02,f,block2,75,AMHR_12.wav,60,rateCompliance,2,0.767058699857444,Please,buy me a,smartphone
+2,02,f,block2,76,SMHR_28.wav,140,rateCompliance,2,0.271828899858519,Please,take out the,garbage
+2,02,f,block2,77,SMLP_17.wav,150,rateCompliance,4,1.18402720009908,Please,send me your,email
+2,02,f,block2,78,AMHR_32.wav,60,rateCompliance,3,1.27317699999548,Please,check on the,baby
+2,02,f,block2,79,AFLP_10.wav,30,rateCompliance,4,0.669931099982932,Please,pay for my,sandwich
+2,02,f,block2,80,AMHR_30.wav,60,rateCompliance,3,0.809941499959677,Please,tidy the,cabin
+2,02,f,block2,81,SFHP_37.wav,90,rateCompliance,3,0.26897450000979,Please,drive us to,Boston
+2,02,f,block2,82,AFLR_31.wav,40,rateCompliance,3,0.511524599976838,Please,take off your,glasses
+2,02,f,block2,83,AMHR_18.wav,60,rateCompliance,3,1.38641269993968,Please,pass him your,bankcard
+2,02,f,block2,84,AFLP_31.wav,30,rateCompliance,5,0.559709300054237,Please,take off your,glasses
+2,02,f,block2,85,AFHP_31.wav,10,rateCompliance,3,1.28675070009194,Please,take off your,t-shirt
+2,02,f,block2,86,SMHP_18.wav,130,rateCompliance,4,1.21772879990749,Please,pass him your,bankcard
+2,02,f,block2,87,AMHP_09.wav,50,rateCompliance,4,0.470503200078383,Please,get me the,ladder
+2,02,f,block2,88,AFLR_33.wav,40,rateCompliance,3,1.10197530011646,Please,remove the,cover
+2,02,f,block2,89,AFHR_31.wav,20,rateCompliance,3,0.310440300032496,Please,take off your,t-shirt
+2,02,f,block2,90,AMLP_09.wav,70,rateCompliance,4,0.552036399953067,Please,get me the,pencil
+2,02,f,block2,91,SFHR_07.wav,100,rateCompliance,2,0.606798400171101,Please,hang up the,curtains
+2,02,f,block2,92,SFLP_34.wav,110,rateCompliance,4,0.902016800129786,Please,describe your,uncle
+2,02,f,block2,93,SFHP_34.wav,90,rateCompliance,3,0.954736799933016,Please,describe your,feelings
+2,02,f,block2,94,AFHR_20.wav,20,rateCompliance,4,0.924374399939552,Please,bring me the,rent cheque
+2,02,f,block2,95,AMHP_17.wav,50,rateCompliance,3,1.09602139983326,Please,send me your,homework
+2,02,f,block2,96,SFHR_10.wav,100,rateCompliance,2,0.834788100095466,Please,pay for my,dinner
+2,02,f,block2,97,SMLR_32.wav,160,rateCompliance,4,1.4399459999986,Please,check on the,oven
+2,02,f,block2,98,SMLP_09.wav,150,rateCompliance,4,1.05377319990657,Please,get me the,pencil
+2,02,f,block2,99,SMHR_38.wav,140,rateCompliance,4,1.02928719995543,Please,find me the,answer
+2,02,f,block2,100,AFHR_01.wav,20,rateCompliance,2,0.571423500077799,Please,lend me a,hundred
+2,02,f,block2,101,SMLR_17.wav,160,rateCompliance,3,0.873292099917307,Please,send me your,email
+2,02,f,block2,102,SMLP_18.wav,150,rateCompliance,3,0.919995100004598,Please,pass him your,message
+2,02,f,block2,103,AMHP_18.wav,50,rateCompliance,3,1.17269999999553,Please,pass him your,bankcard
+2,02,f,block2,104,SFHR_20.wav,100,rateCompliance,2,1.47415039991029,Please,bring me the,rent cheque
+2,02,f,block2,105,AFLR_07.wav,40,rateCompliance,4,1.80311619979329,Please,hang up the,picture
+2,02,f,block2,106,SMLP_38.wav,150,rateCompliance,4,0.529460400110111,Please,find me the,scissors
+2,02,f,block2,107,AFLP_07.wav,30,rateCompliance,5,0.829881300218403,Please,hang up the,picture
+2,02,f,block2,108,SMHR_12.wav,140,rateCompliance,2,1.48575780005194,Please,buy me a,smartphone
+2,02,f,block2,109,AMHP_28.wav,50,rateCompliance,4,1.52921389997937,Please,take out the,garbage
+2,02,f,block2,110,SFLP_31.wav,110,rateCompliance,5,0.578249899903312,Please,take off your,glasses
+2,02,f,block2,111,SFHR_37.wav,100,rateCompliance,3,0.573886000085622,Please,drive us to,Boston
+2,02,f,block2,112,AFLR_37.wav,40,rateCompliance,3,0.319121500011533,Please,drive us to,campus
+2,02,f,block2,113,AFLP_33.wav,30,rateCompliance,4,0.568735999986529,Please,remove the,cover
+2,02,f,block2,114,SFLR_20.wav,120,rateCompliance,1,1.16077910014428,Please,bring me the,hammer
+2,02,f,block2,115,AMLP_14.wav,70,rateCompliance,4,0.533420599997044,Please,install the,update
+2,02,f,block2,116,SFHP_07.wav,90,rateCompliance,4,0.854870599927381,Please,hang up the,curtains
+2,02,f,block2,117,SMHR_30.wav,140,rateCompliance,2,1.03800219995901,Please,tidy the,cabin
+2,02,f,block2,118,AMLP_30.wav,70,rateCompliance,4,0.651231199968606,Please,tidy the,hallway
+2,02,f,block2,119,AFLR_10.wav,40,rateCompliance,2,1.06783630000427,Please,pay for my,sandwich
+2,02,f,block2,120,SMHR_18.wav,140,rateCompliance,2,0.468730699969456,Please,pass him your,bankcard
+2,02,f,block2,121,SFLP_20.wav,110,rateCompliance,3,0.996967300074175,Please,bring me the,hammer
+2,02,f,block2,122,AFHR_07.wav,20,rateCompliance,3,1.4066803001333,Please,hang up the,curtains
+2,02,f,block2,123,AFLR_01.wav,40,rateCompliance,3,0.712989799911156,Please,lend me a,nickel
+2,02,f,block2,124,AMHR_17.wav,60,rateCompliance,3,0.874917300185189,Please,send me your,homework
+2,02,f,block2,125,AFLP_34.wav,30,rateCompliance,4,0.756805799901485,Please,describe your,uncle
+2,02,f,block2,126,SFLR_31.wav,120,rateCompliance,1,0.778296099975705,Please,take off your,glasses
+2,02,f,block2,127,AFHP_20.wav,10,rateCompliance,4,1.12123799999245,Please,bring me the,rent cheque
+2,02,f,block2,128,AFHP_33.wav,10,rateCompliance,4,0.396044899942353,Please,remove the,diaper
+2,02,f,block2,129,SMLP_32.wav,150,rateCompliance,4,1.41199769987725,Please,check on the,oven
+2,02,f,block2,130,SFLP_37.wav,110,rateCompliance,4,1.26372929988429,Please,drive us to,campus
+2,02,f,block2,131,AFHR_10.wav,20,rateCompliance,3,1.17279270011932,Please,pay for my,dinner
+2,02,f,block2,132,SFHR_01.wav,100,rateCompliance,1,1.08289039996453,Please,lend me a,hundred
+2,02,f,block2,133,SMHR_14.wav,140,rateCompliance,2,0.386276799952611,Please,install the,washer
+2,02,f,block2,134,SMHP_17.wav,130,rateCompliance,3,1.10630989982747,Please,send me your,homework
+2,02,f,block2,135,AMHR_14.wav,60,rateCompliance,2,0.693986699916422,Please,install the,washer
+2,02,f,block2,136,SMLP_30.wav,150,rateCompliance,4,1.26592389983125,Please,tidy the,hallway
