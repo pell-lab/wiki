@@ -23,6 +23,8 @@ knitr:
     fig.show: hold
 ---
 
+Backlink to [Pell Lab wiki](https://github.com/pell-lab/wiki/wiki)
+
 ```{r, message=F}
 #| code-fold: true
 
@@ -178,7 +180,7 @@ event_list_postMR %>%
   kable_styling(full_width = F) %>%
   scroll_box(width = "100%", height = "300px")
 ```
-The `flag` column indicates whether the trial was flagged as "bad" (= 1) or not. In this data set, there are `r sum(event_list_postMR$flag)` bad trials out of `r nrow(event_list_postMR)` remaining trials. ^[as a sanity check, you can compare the `bvmknum` column with the `eventID` column in the few preceding dataframes. Also the number of rows (nrow = `r nrow(event_list_postMR)`should match the above-list containing remaining events after manual rejection (nrow = `r nrow(event_list)`]. 
+The `flag` column indicates whether the trial was flagged as "bad" (= 1) or not. In this data set, there are `r sum(event_list_postMR$flag)` bad trials out of `r nrow(event_list_postMR)` remaining trials. ^[as a sanity check, you can compare the `bvmknum` column with the `eventID` column in the few preceding dataframes. Also the number of rows (nrow = `r nrow(event_list_postMR)`) should match the above-list containing remaining events after manual rejection (nrow = `r nrow(event_list)`)]. 
 
 We can now merge this data frame with the one from the previous step:
 ```{r}
