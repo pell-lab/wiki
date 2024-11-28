@@ -434,7 +434,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="rejection-information-source-1-manual-rejection" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="rejection-information-source-1-manual-rejection"><span class="header-section-number">3.3</span> Rejection information source 1: Manual rejection</h2>
-<p>This matlab script extracts, for each subject, two dataframes: 1. The complete “identifier” information of all events (urevents) 2. The same information but after some trials have been rejected</p>
+<p>This <a href="https://github.com/pell-lab/wiki/blob/41b702f0d202b98f2a3bafa6df3055c3001baaa6/In%20preparation/assets/scripts/geturevent.m">MATLAB script</a> extracts, for each subject, two dataframes: 1. The complete “identifier” information of all events (urevents) 2. The same information but after some trials have been rejected</p>
 <p>Respective data frames for sub01 are shown below:</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -7296,7 +7296,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="rejection-information-source-2-automatic-rejection" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="rejection-information-source-2-automatic-rejection"><span class="header-section-number">3.4</span> Rejection information source 2: Automatic rejection</h2>
-<p>This MATLAB script extracts the event information after automatic rejection of trials.</p>
+<p>This <a href="https://github.com/pell-lab/wiki/blob/41b702f0d202b98f2a3bafa6df3055c3001baaa6/In%20preparation/assets/scripts/getARflags.m">MATLAB script</a> extracts the event information after automatic rejection of trials.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -11372,7 +11372,7 @@ Note
 
 </div>
 </div>
-<p>This is the final data frame that contains all the information we need for trial-level modelling. The <code>combined_flag</code> column indicates whether the trial was rejected at either stage. This information can be used to filter out trials in the ERP data frame.</p>
+<p>This is the final data frame that contains all 272 trials (and which ones are flagged for rejection). The <code>combined_flag</code> column indicates whether the trial was rejected at either stage. This information can be used to filter out trials in the ERP data frame.</p>
 </section>
 </section>
 <section id="next-steps" class="level1" data-number="4">

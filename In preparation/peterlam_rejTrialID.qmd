@@ -93,7 +93,7 @@ This solution leverages the fact that EEGLAB assigns a unique ID to each event (
 
 ## Rejection information source 1: Manual rejection
 
-This matlab script extracts, for each subject, two dataframes: 
+This [MATLAB script](https://github.com/pell-lab/wiki/blob/41b702f0d202b98f2a3bafa6df3055c3001baaa6/In%20preparation/assets/scripts/geturevent.m) extracts, for each subject, two dataframes: 
   1. The complete "identifier" information of all events (urevents)
   2. The same information but after some trials have been rejected
 
@@ -162,7 +162,7 @@ joined_df_2 %>%
 
 ## Rejection information source 2: Automatic rejection
 
-This MATLAB script extracts the event information after automatic rejection of trials.
+This [MATLAB script](https://github.com/pell-lab/wiki/blob/41b702f0d202b98f2a3bafa6df3055c3001baaa6/In%20preparation/assets/scripts/getARflags.m) extracts the event information after automatic rejection of trials.
 
 ::: {.callout-note}
 IMPORTANT: by "rejection", EEG/ERPLAB actually flags the trials and does not remove them from the dataset. So in this step, the goal is to obtain which of the remaining trials were flagged as "bad" for rejection. 
